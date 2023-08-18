@@ -44,5 +44,7 @@ $ npx hardhat console --network sepolia
 ## code for getting values in the console
 
 const Box = await ethers.getContractFactory("Box")
+
 const box = await Box.attach("ADDRESS OF PROXY CONTRACT")
+
 (await box.retrieve()).toString()
